@@ -1,0 +1,35 @@
+Route::get('filtrar/licitacoes', 'LicitacaoController@filtrarlicitacoes');
+
+Route::get('licitacoes/proximas', 'LicitacaoController@proximasLicitacoes');
+Route::get('licitacoes/destaques', 'LicitacaoController@destaqueLicitacoes');
+Route::get('licitacoes/ultimaspostagens', 'LicitacaoController@ultimasPublicacoes');
+Route::get('licitacoes/modalidade/{idmodalidade}', 'LicitacaoController@licitacoesModalidade') -> where(['idmodalidade'=>'[1-9]{1}[0-9]{0,9}+']);
+Route::get('licitacoes/{id?}', 'LicitacaoController@licitacoes') ->where(['id'=>'[0-9]{0,9}']);
+
+Route::get('licitacoes/entidades', 'LicitacaoController@entidadesLicitacoes');
+Route::get('status', 'StatusController@status');
+Route::get('modalidades/contador', 'ModalidadeController@modalidadesByQuantidade');
+
+Route::get('convenios/entidades', 'ConvenioController@entidadesConvenios');
+Route::get('convenios/{id?}', 'ConvenioController@convenios') -> where(['id'=>'[0-9]{0,9}']);
+Route::get('convenios/categoria/{idcategoria}', 'ConvenioController@conveniosCategoria') -> where(['idcategoria'=>'[1-9]{1}[0-9]{0,9}+']);
+
+Route::get('registrodeprecos/entidades', 'RegistroPrecoController@entidadesRegistroPrecos');
+Route::get('registrodeprecos/{id?}', 'RegistroPrecoController@contratos') -> where(['id'=>'[0-9]{0,9}']);
+
+Route::get('contratos/entidades', 'ContratoController@entidadesContratos');
+Route::get('contratos/{id?}', 'ContratoController@contratos')-> where(['id'=>'[0-9]{0,9}']);
+Route::get('contratos/categoria/{idcategoria}', 'ContratoController@contratosCategoria') -> where(['idcategoria'=>'[1-9]{1}[0-9]{0,9}+']);
+
+Route::get('fornecedores/suspensos', 'FornecedorController@fornecedoresSuspensos');
+Route::get('fornecedores/{id?}', 'FornecedorController@fornecedores') -> where(['id'=>'[0-9]{0,9}']);
+
+Route::get('download/{id}', 'LicitacaoController@download')->name('download') -> where(['id'=>'[1-9]{1}[0-9]{0,9}+']);
+
+
+Route::get('licitacoes/anos', 'LicitacaoController@anosLicitacoes');
+Route::get('licitacoes/categoria/{idcategoria}', 'LicitacaoController@licitacoesCategoria') -> where(['idcategoria'=>'[1-9]{1}[0-9]{0,9}+']);
+Route::get('contratos/categorias', 'ContratoController@categoriasFromContratos');
+Route::get('convenios/categorias', 'ConvenioController@categoriasFromConvenios');
+Route::get('modalidades', 'ModalidadeController@modalidades');
+Route::get('fornecedores/tipoprocesso/{id}', 'FornecedorController@fornecedoresByTipoProcesso') -> where(['id'=>'[1-9]{1}[0-9]{0,9}+']);
