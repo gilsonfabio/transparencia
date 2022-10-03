@@ -4,7 +4,6 @@ import Pagination from '../components/Pagination';
 import { GetServerSideProps } from 'next';
 import PaginationSelect from '../components/PaginationSelection';
 import Submenu from '../components/Submenu';
-import { filtros } from '../services/filtros';
 import moment from 'moment';
 import DatePicker from "react-datepicker";
 import axios from 'axios';
@@ -130,7 +129,7 @@ export default function ExeOrcamentaria({categorias}: apiProps) {
                                             item.tipos.map((row:any) => (
                                             <div className="flex flex-row items-start justify-between px-2 py-0 ">
                                                 <div className="flex flex-col items-start px-2 py-1">
-                                                    <a href="" className='text-green-500 text-[12px] font-bold'>{row.name}</a>
+                                                    <a href={`https://webio.aparecida.go.gov.br/api/tnsp/download/${row.cod}`} className='text-green-500 text-[12px] font-bold'>{row.name}</a>
                                                     <div className="text-[12px] mb-0"></div>
                                                 </div>
                                             </div>                    

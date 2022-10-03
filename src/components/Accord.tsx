@@ -1,4 +1,4 @@
-import { faqs } from "../services/data";
+import faqs from "../services/data/faqs.json";
 import AccordItem from "./AccordItem";
 
 const Accord = () => {

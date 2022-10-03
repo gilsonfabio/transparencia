@@ -10,7 +10,7 @@ import {  FaInfoCircle } from 'react-icons/fa';
 import {  FaAdjust } from 'react-icons/fa';
 import {  FaChevronCircleDown } from 'react-icons/fa';
 import {  FaEllipsisV } from 'react-icons/fa';
-import { FaTimes} from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 
 interface itens {
     label?: string;

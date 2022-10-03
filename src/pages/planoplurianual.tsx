@@ -4,6 +4,11 @@ import Footer from '../components/Footer';
 import Menubar from '../components/Menubar';
 import Submenu from '../components/Submenu';
 import axios from 'axios';
+import qs from 'qs';
+
+interface filtros {
+    "ano" ?: number;
+}
 
 interface apiProps {
     "contadores": any;
@@ -25,6 +30,7 @@ export default function PlanoPluriAnual() {
   };
   const [planos, setPlanos] = useState([]);
   const [years, setYears] = useState([]);
+  const [idYear, setIdYear] = useState(0);
 
   const options = [
     {id:1, label:'TODOS', link:'TODOS'},
@@ -33,6 +39,10 @@ export default function PlanoPluriAnual() {
     {id:4, label:'2019', link:'2019'},
     {id:5, label:'2018', link:'2018'},
   ]
+
+  const testeJson:filtros = {
+    ano: 0,
+  }
 
   /*
    {
@@ -46,15 +56,16 @@ export default function PlanoPluriAnual() {
   */
 
     useEffect(() => {      
+        delete testeJson.ano;
         axios({
-            method: 'get',    
-            url: `https://webio.aparecida.go.gov.br/api/tnsp/gestaoorcamentaria/23`,
+            method: 'post',    
+            url: `https://webio.aparecida.go.gov.br/api/tnsp/gestao/23`,
+            data: qs.stringify(testeJson),
         }).then(function(response) {
-            console.log(response)
-            setPlanos(response.data.result)            
+            setPlanos(response.data.items)
         }).catch(function(error) {
             console.log(error)
-        }) 
+        })
 
         axios({
             method: 'get',    
@@ -79,7 +90,28 @@ export default function PlanoPluriAnual() {
         },
     ]  
 
-  return (
+    useEffect(() => {      
+        if (idYear != 0 ) {
+            testeJson.ano = idYear
+        }else {
+            delete testeJson.ano;
+        }
+        axios({
+            method: 'post',    
+            url: `https://webio.aparecida.go.gov.br/api/tnsp/gestao/23`,
+            data: qs.stringify(testeJson),
+        }).then(function(response) {
+            setPlanos(response.data.items)
+        }).catch(function(error) {
+            console.log(error)
+        })
+    }, [idYear]) 
+         
+    function handleYear(ano: any) {
+        setIdYear(ano);
+    }
+
+    return (
     <div className="" >
         <Menubar />
         <Submenu options = {itemsSubmenu} /> 
@@ -96,11 +128,11 @@ export default function PlanoPluriAnual() {
                             {years.map((opc:any) => (
                                 <li key={opc.ano}className="relative">
                                     <div className="flex items-center text-md py-4 px-6 h-12 overflow-hidden border-b-2 border-white font-bold text-green-700 text-ellipsis whitespace-nowrap hover:text-green-900 hover:bg-gray-100 transition duration-300 ease-in-out hover:cursor-pointer" >
-                                        <Link href={`#`} data-mdb-ripple="true" data-mdb-ripple-color="dark" >
+                                        <button onClick={() => handleYear(opc.ano)} data-mdb-ripple="true" data-mdb-ripple-color="dark" >
                                             <div className='flex flex-row justify-between w-full cursor-pointer'>  
                                                 <div>{opc.ano}</div> 
                                             </div>
-                                        </Link>   
+                                        </button>   
                                     </div>                  
                                 </li>
                             ))}

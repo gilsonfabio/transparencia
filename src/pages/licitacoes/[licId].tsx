@@ -848,8 +848,8 @@ export default function LicitacoesList() {
         </div>
         </div>
         <div className='mt-3'>   
-        <Footer /> 
-      </div>        
-        </div>
+            <Footer /> 
+        </div>        
+     </div>
     );
 }
