@@ -1,0 +1,57 @@
+[{
+	"id": 1,
+	"tipo": "Consulta Pública",
+	"objeto": "Parceria Pública-Privada (PPP) é o contrato pelo qual o parceiro privado assume o compromisso de disponibilizar à administração pública ou à comunidade uma certa utilidade mensurável mediante a operação e manutenção de uma obra por ele previamente projetada, financiada e construída.",
+	"data": "03/11/2021",
+    "status": "Aberta",
+    "link": ""
+}, {
+	"id": 2,
+	"tipo": "Audiência Pública",
+	"objeto": "Elaboração da LDO - Lei de Diretrizes Orçamentárias 2019",
+	"data": "05/04/2018",
+    "status": "Encerrada",
+    "link": ""
+}, {
+	"id": 3,
+	"tipo": "Solenidade Pública",
+	"objeto": "Ato Solene de Sanção da Lei Municipal de Acesso à Informação e Anticorrupção",
+	"data": "12/07/2017",
+    "status": "Encerrada",
+    "link": ""
+}, {
+	"id": 4,
+	"tipo": "Audiência Pública",
+	"objeto": "Elaboração da LDO - Lei de Diretrizes Orçamentárias 2018",
+	"data": "08/05/2017",
+    "status": "Encerrada",
+    "link": ""
+}, {
+	"id": 5,
+	"tipo": "Audiência Pública",
+	"objeto": "Elaboração da LDO - Lei de Diretrizes Orçamentárias 2017",
+	"data": "21/09/2016",
+    "status": "Encerrada",
+    "link": ""
+}, {
+	"id": 6,
+	"tipo": "Audiência Pública",
+	"objeto": "Permuta de área pública com compensação financeira, com a finalidade de edificar arquibancadas, vestiários, academia, entre outros, no campo de futebol Tiradentes",
+	"data": "15/09/2016",
+    "status": "Encerrada",
+    "link": ""
+}, {
+	"id": 7,
+	"tipo": "Audiência Pública",
+	"objeto": "Receber contribuições e esclarecer a opinião pública sobre o Gerenciamento dos Resíduos Sólidos do Município",
+	"data": "20/05/2016",
+    "status": "Encerrada",
+    "link": ""
+}, {
+	"id": 8,
+	"tipo": "Concorrência Pública",
+	"objeto": "Projeto de PPP (Parceria Público-Privada) para gestão de energia e eficiência energética da rede de iluminação pública de Aparecida de Goiânia.",
+	"data": "",
+    "status": "Cancelada",
+    "link": ""
+}]

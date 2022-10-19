@@ -87,7 +87,7 @@ const itemsAccordion5 = [
       title: 'Controle Social',
       icon: 'social',
       itens: [
-        {label:'Conselho Municipal de Transparência',link:'/conselhotransparecia', target:'_self'},
+        {label:'Conselho Municipal de Transparência',link:'/conselhomunicipal', target:'_self'},
         {label:'Conselho de Eficácia de Gestão',link:'/conselhodegestao', target:'_self'},
       ]
     },

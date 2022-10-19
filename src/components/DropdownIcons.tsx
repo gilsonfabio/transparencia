@@ -33,7 +33,7 @@ function DropdownIcons() {
               <div className="hidden md:block">
                 <div className="ml-10 flex items-center space-x-4">
                   <button className="text-white hover:text-gray-400 px-1 py-2 text-sm font-medium" onClick={() => {}}></button>
-                  <a target="_blank" href="#" className="text-white hover:text-gray-400 px-1 py-2 text-sm font-medium"><FaInfoCircle className="w-4 h-4 fa-solid fa-circle-info"/></a>
+                  <a target="_blank" href="/acessoinformacao" className="text-white hover:text-gray-400 px-1 py-2 text-sm font-medium"><FaInfoCircle className="w-4 h-4 fa-solid fa-circle-info"/></a>
                   <a target="_blank" href="https://www.facebook.com/PrefAparecida/" className="text-white hover:text-gray-400 px-1 py-2 text-sm font-medium"><FaFacebook className="w-4 h-4 fa-solid fa-circle-info"/></a>
                   <a target="_blank" href="https://www.instagram.com/prefaparecida/" className="text-white hover:text-gray-400 px-1 py-2 text-sm font-medium"><FaInstagram className="w-4 h-4 fa-solid fa-circle-info"/></a>
                   <a target="_blank" href="https://www.youtube.com/channel/UC-YvAQ4nT9_sewdzsp1zWjw" className="text-white hover:text-gray-400 px-1 py-2 text-sm font-medium"><FaYoutube className="w-4 h-4 fa-solid fa-circle-info"/></a>
@@ -73,7 +73,7 @@ function DropdownIcons() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div className="bg-black rounded-b-lg origin-center absolute px-2 py-0 w-12 mx-3 z-20 flex flex-col">
-                <a href="#" className="bg-black text-white hover:text-gray-400 px-2 py-3 text-sm font-medium"><FaInfoCircle className="w-5 h-5 fa-solid fa-circle-info"/></a>
+                <a href="/acessoinformacao" className="bg-black text-white hover:text-gray-400 px-2 py-3 text-sm font-medium"><FaInfoCircle className="w-5 h-5 fa-solid fa-circle-info"/></a>
                 <a target="_blank" href="https://www.facebook.com/PrefAparecida/" className="bg-black text-white hover:text-gray-400 px-2 py-3 text-sm font-medium"><FaFacebook className="w-5 h-5 fa-solid fa-circle-info"/></a>
                 <a target="_blank" href="https://www.instagram.com/prefaparecida/" className="bg-black text-white hover:text-gray-400 px-2 py-3 text-sm font-medium" ><FaInstagram className="w-5 h-5 fa-solid fa-circle-info"/></a>
                 <a target="_blank" href="https://www.youtube.com/channel/UC-YvAQ4nT9_sewdzsp1zWjw" className="bg-black text-white hover:text-gray-400 px-2 py-3 text-sm font-medium" ><FaYoutube className="w-5 h-5 fa-solid fa-circle-info"/></a>

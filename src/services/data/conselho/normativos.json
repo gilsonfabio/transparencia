@@ -1,0 +1,19 @@
+[{
+	"id": 1,
+	"tipo": "Atos",
+	"title": "Ato nº 1, de 07 de fevereiro de 2018",
+	"descricao": "Aprova o Regimento do Conselho Municipal de Transparência, Controle Social e Prevenção à Corrupção de Aparecida de Goiânia.",
+    "link": "https://webio.aparecida.go.gov.br/diariooficial/download/901"
+}, {
+	"id": 2,
+	"tipo": "Decretos",
+	"title": "Decreto N nº 278, de 11 de dezembro de 2017",
+	"descricao": "Nomeia membros para compor o Conselho Municipal de Transparência, Controle Social e Prevenção à Corrupção do Município de Aparecida de Goiânia.",
+    "link": "https://webio.aparecida.go.gov.br/diariooficial/download/803"	
+}, {
+	"id": 3,
+	"tipo": "Leis",
+	"title": "Lei Municipal nº 3.366, de 26 de junho de 2017",
+	"descricao": "Dispõe sobre o acesso à informação previsto no inciso XXXIII do art. 5º, no inciso II do § 3º do art. 37 e no § 2º, do art. 216, da Constituição Federal e na Lei nº 12.527/2011, sobre a instituição do Conselho Municipal da Transparência, Controle Social e Prevenção à Corrupção e, sobre regulamentação municipal da Lei nº 12.846/2013.",
+    "link": "https://webio.aparecida.go.gov.br/diariooficial/download/701"	
+}]

@@ -128,10 +128,8 @@ export default function PlanoPluriAnual() {
                             {years.map((opc:any) => (
                                 <li key={opc.ano}className="relative">
                                     <div className="flex items-center text-md py-4 px-6 h-12 overflow-hidden border-b-2 border-white font-bold text-green-700 text-ellipsis whitespace-nowrap hover:text-green-900 hover:bg-gray-100 transition duration-300 ease-in-out hover:cursor-pointer" >
-                                        <button onClick={() => handleYear(opc.ano)} data-mdb-ripple="true" data-mdb-ripple-color="dark" >
-                                            <div className='flex flex-row justify-between w-full cursor-pointer'>  
-                                                <div>{opc.ano}</div> 
-                                            </div>
+                                        <button onClick={() => handleYear(opc.ano)} data-mdb-ripple="true" data-mdb-ripple-color="dark" className='flex flex-row justify-between w-full cursor-pointer'>
+                                            {opc.ano}                                            
                                         </button>   
                                     </div>                  
                                 </li>

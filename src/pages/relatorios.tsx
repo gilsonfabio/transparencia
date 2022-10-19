@@ -6,7 +6,7 @@ import Submenu from '../components/Submenu';
 
 import api from './api/api';
 
-export default function ItemsFaqs() {
+export default function relatorios() {
   const [showOptions, setShowOptions] = useState(false);
   const handleClick = () => {
     setShowOptions(!showOptions);      

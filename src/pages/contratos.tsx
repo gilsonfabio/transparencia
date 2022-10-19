@@ -566,6 +566,10 @@ export default function Contratos({categorias, fornecedores, entidades}: apiProp
                                   <div className="flex flex-col items-start px-2 py-1">
                                     <span className='text-[12px] font-bold'>Titulo</span>
                                     <div className="text-[12px] mb-0">{item.titulo}</div>
+                                  </div>
+                                  <div className="flex flex-col items-start px-2 ">
+                                    <span className='text-[12px] font-bold'>Fiscal</span>
+                                    <div className="text-[12px] mb-0">{item.fiscal}</div>
                                   </div>                
                                 </div>
                                 <div className="flex flex-row items-start justify-between px-2 ">
